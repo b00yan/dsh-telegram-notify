@@ -1,0 +1,12 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.dsh/
+telegram-notify.json
+telegram-notify-debug.log
+*.log
+*.tgz
+*.zip
+coverage/
+.DS_Store

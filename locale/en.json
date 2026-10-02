@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Telegram Notify",
+    "description": "Sends a Telegram message when a turn fails, a session goes quiet, or a question needs an answer."
+  }
+}

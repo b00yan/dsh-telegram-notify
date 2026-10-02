@@ -1,0 +1,13 @@
+- insert:
+    - id: telegram-notify
+      name: 'dsh-telegram-notify'
+      config:
+        # Quiet period after the last turn before the session counts as done.
+        idleGraceMs: 45000
+        # One-tap pairing: with a token and no chat id, open t.me/<your_bot> and
+        # press Start. This bounds how long that offer stays open.
+        pairingWindowMs: 600000
+        # Trace to <DSH_HOME>/telegram-notify-debug.log. Turn off once the
+        # notification paths are trusted; it is the only visibility into the
+        # Host when something does not arrive.
+        debug: false

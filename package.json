@@ -1,0 +1,34 @@
+{
+  "name": "dsh-telegram-notify",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Telegram notifications when a turn fails, a session goes quiet, or a question needs an answer.",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "selftest.mjs",
+    "README.md",
+    "LICENSE",
+    "CONTRIBUTING.md",
+    "SECURITY.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node selftest.mjs",
+    "selftest": "node selftest.mjs"
+  }
+}
